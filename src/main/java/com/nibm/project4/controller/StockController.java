@@ -26,11 +26,11 @@ public class StockController {
         return ResponseEntity.ok(stockService.getAllStocks());
     }
 
-    /*@PutMapping("/{id}")
+    @PutMapping("/{id}")
     public ResponseEntity<String> updateStock(@PathVariable int id, @RequestBody Stock updatedStock) {
         stockService.updateStock(id, updatedStock);
         return ResponseEntity.ok("Stock updated successfully");
-    }*/
+    }
 
     @DeleteMapping("/{id}")
     public ResponseEntity<String> deleteStock(@PathVariable int id) {

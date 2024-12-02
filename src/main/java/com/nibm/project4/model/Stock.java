@@ -18,9 +18,9 @@ public class Stock {
 
 
 
-    /*@ManyToOne
+    @ManyToOne
     @JoinColumn(name = "supplier_id", referencedColumnName = "id")
-    private Supplier supplier;*/
+    private Supplier supplier;
 
     // Getters and Setters
     public int getId() {

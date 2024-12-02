@@ -20,13 +20,13 @@ public class StockService {
         return stockRepository.findAll();
     }
 
-   /*public void updateStock(int id, Stock updatedStock) {
+   public void updateStock(int id, Stock updatedStock) {
         Stock existingStock = stockRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Stock not found"));
         existingStock.setQuantity(updatedStock.getQuantity());
         existingStock.setPrice(updatedStock.getPrice());
         stockRepository.save(existingStock);
-    }*/
+    }
 
     public void deleteStock(int id) {
         stockRepository.deleteById(id);
